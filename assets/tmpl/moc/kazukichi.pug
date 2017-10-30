@@ -1,0 +1,32 @@
+extends /assets/tmpl/moc/_layout.pug
+
+block contents
+    .c-category
+        .c-categoryCreate
+            input.c-categoryCreate_textBox(type="text")
+            input.c-categoryCreate_btn(type="button", value="新規作成")
+        .c-categoryTitle
+            i.fa.fa-bars(aria-hidden="true")
+            a.c-categoryTitle_title(href="#") カテゴリA
+            .c-category_operation
+                a(herf="#")
+                    i.fa.fa-arrow-up(aria-hidden="true")
+                a(herf="#")
+                    i.fa.fa-arrow-down(aria-hidden="true")
+                a(herf="#")
+                    i.fa.fa-pencil(aria-hidden="true")
+                a(herf="#")
+                    i.fa.fa-times(aria-hidden="true")
+        .c-categoryAdd
+            input.c-categoryAdd_textBox(type="text" placeholder="カテゴリ名を入力")
+            input.c-categoryAdd_decisionBtn(type="button", value="決定")
+            input.c-categoryAdd_cancelBtn(type="button", value="キャンセル")
+            .c-category_operation
+                a(herf="#")
+                    i.fa.fa-arrow-up(aria-hidden="true")
+                a(herf="#")
+                    i.fa.fa-arrow-down(aria-hidden="true")
+                a(herf="#")
+                    i.fa.fa-pencil(aria-hidden="true")
+                a(herf="#")
+                    i.fa.fa-times(aria-hidden="true")
