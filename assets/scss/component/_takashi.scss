@@ -1,0 +1,91 @@
+.c-container {
+    width: 1164px;
+}
+
+.c-tagCreate {
+    height: 70px;
+}
+
+.btn {
+    background-color: #D6D9E0;
+    font-weight: bold;
+}
+
+.c-tagCreate_box {
+    display:inline-block;
+}
+
+.c-tagCreate_btn {
+    display:inline-block;
+}
+
+.c-tag {
+    border-top: solid 1px #CCCCCC;
+    height: 60px;
+}
+
+.c-tagEdit {
+    display:inline-block;
+    height: 40px;
+    margin-top:10px;
+
+    &_box {
+        display:inline-block;
+    }
+    &_btn {
+        display:inline-block;
+    }
+}
+
+.c-tagName {
+    display:inline-block;
+    color: #437EC4;
+    font-size: 14px;
+}
+
+.c-tag_Area {
+    height: 20px;
+    margin-top: 20px;
+}
+
+i {
+    margin: 0 10px 0 10px;
+    color: #54687A;
+}
+
+.c-tagBox_style {
+    padding: 5.050px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+}
+
+.c-tagCreate_style {
+    height: 40px;
+    position: relative;
+    top: 15px;
+
+}
+
+.c-tagCreate_btn_style {
+    height: 40px;
+
+}
+
+.c-tagEdit_btn_style {
+    height: 40px;
+
+}
+
+input {
+    .c-tagCreate_btn_style.btn {
+        vertical-align:top;
+    }
+    .c-tagEdit_btn_style.btn {
+        vertical-align:top;
+    }
+    .c-tagBox_style {
+        vertical-align:top;
+    }
+
+}
