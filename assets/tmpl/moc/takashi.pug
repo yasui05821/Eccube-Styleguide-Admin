@@ -1,0 +1,40 @@
+extends /assets/tmpl/moc/_layout.pug
+
+block contents
+    .c-container
+        .c-tagCreate
+            .c-tagCreate_style
+                .c-tagCreate_box
+                    input.c-tagBox_style(type="text")
+
+                .c-tagCreate_btn
+                    input.c-tagCreate_btn_style.btn(type="submit" value="新規作成")
+
+        .c-tag
+            .c-tag_Area
+                .c-tagName.col-sm-11 タグA
+                i.fa.fa-pencil.fa-lg(aria-hidden='true')
+                i.fa.fa-times.fa-lg(aria-hidden='true')
+
+        .c-tag
+            .c-tagEdit.col-sm-11
+                .c-tagEdit_box
+                    input.c-tagBox_style(type="text" placeholder="タグ名を入力")
+
+                .c-tagEdit_btn
+                    input.c-tagEdit_btn_style.btn(type="button" value="決定")
+
+            i.fa.fa-pencil.fa-lg(aria-hidden='true')
+            i.fa.fa-times.fa-lg(aria-hidden='true')
+
+        .c-tag
+            .c-tag_Area
+                .c-tagName.col-sm-11 タグB
+                i.fa.fa-pencil.fa-lg(aria-hidden='true')
+                i.fa.fa-times.fa-lg(aria-hidden='true')
+
+        .c-tag
+            .c-tag_Area
+                .c-tagName.col-sm-11 タグC
+                i.fa.fa-pencil.fa-lg(aria-hidden='true')
+                i.fa.fa-times.fa-lg(aria-hidden='true')
