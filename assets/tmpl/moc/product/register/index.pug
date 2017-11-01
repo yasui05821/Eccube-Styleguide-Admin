@@ -37,30 +37,30 @@ block secondaryContents
                 i.fa.fa-angle-up
         +e.contents
             form
-                +e.INPUT.search(type='text' placeholder='カテゴリ検索')
-                +e.BUTTON.searchBtn
+                input.c-searchForm(type='text' placeholder='カテゴリ検索')
+                button.c-searchBtn
                     i.fa.fa-search
-                +e.categories
+                .c-category
                     ul
                         li
                             input(type='checkbox')
-                            +e.LABEL.categoryLayer1 カテゴリA
+                            label.c-categoryLayer1 カテゴリA
                         li
                             input(type='checkbox')
-                            +e.LABEL.categoryLayer2 ├ カテゴリA-a
+                            label.c-categoryLayer2 ├ カテゴリA-a
                         li
                             input(type='checkbox')
-                            +e.LABEL.categoryLayer2 ├ カテゴリA-b
+                            label.c-categoryLayer2 ├ カテゴリA-b
                         li
                             input(type='checkbox')
-                            +e.LABEL.categoryLayer2 └ カテゴリA-c
+                            label.c-categoryLayer2 └ カテゴリA-c
                         li
                             input(type='checkbox')
-                            +e.LABEL.categoryLayer3 └ カテゴリA-c-2
+                            label.c-categoryLayer3 └ カテゴリA-c-2
                         li
                             input(type='checkbox')
-                            +e.LABEL.categoryLayer2 └ カテゴリA-b
-                a.c-block__addAndEdit(href='#') カテゴリの追加・編集
+                            label.c-categoryLayer2 └ カテゴリA-b
+                a.c-categoryBtn(href='#') カテゴリの追加・編集
 
 block conversionArea
     +b.c-conversionArea

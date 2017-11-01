@@ -1,13 +1,13 @@
 @import "../library/_variable";
 
-.c-block {
-  &__search {
+.c-search {
+  &Form {
     width: 240px;
     padding: 7px;
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-  &__searchBtn {
+  &Btn {
     margin-left: 5px;
     margin-bottom: 10px;
     width: 37px;
@@ -18,21 +18,22 @@
     color: $blueBayoux;
     cursor: pointer;
   }
-  &__categories {
-    margin-bottom: 10px;
-    height: 300px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    overflow: scroll;
-    padding: 10px;
-  }
-  &__categoryLayer2 {
+}
+
+.c-category {
+  margin-bottom: 10px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: scroll;
+  padding: 10px;
+  &Layer2 {
     margin-left: 10px;
   }
-  &__categoryLayer3 {
+  &Layer3 {
     margin-left: 20px;
   }
-  &__addAndEdit {
+  &Btn {
     display: block;
     border-radius: 4px;
     border: 1px solid #696969;
