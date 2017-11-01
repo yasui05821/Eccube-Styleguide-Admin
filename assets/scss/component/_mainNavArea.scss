@@ -11,23 +11,93 @@ Markup:
 Styleguide 3.0
 */
 
+body {
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration:none;
+  color: #2F3F4E;
+}
+
 .c-mainNavArea {
   width: 220px;
   height: 100%;
-  background: #F3F4F6;
   border-right: 1px solid $dllNavy20;
   position: fixed;
   left: 0;
   z-index: 900;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  padding-bottom: 100px;
 
   @include media_sp {
     display: none;
   }
 
   &__nav {
-
-   }
+    background-color: #F3F4F6;
+    i {
+      width: 16px;
+      height: auto;
+      line-height: 16px;
+      margin: 0 14px 0 14px;
+    }
+  }
   &__navItem {
-    border-bottom: 1px solid $dllNavy20;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2F3F4E;
+    &Title {
+      border-bottom: 1px solid $dllNavy20;
+      a {
+        display: block;
+        padding: 8.75px 0 8.75px 0;
+        position: relative;
+        &:after {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          content: "\f106";
+          font-family: FontAwesome;
+          font-size: 1.5em;
+          color: #000000;
+          position: absolute;
+          right: 14px;
+        }
+      }
+    }
+    li {
+      vertical-align: middle;
+    }
+    &s {
+      background: #FFFFFF;
+      font-size: 14px;
+      line-height: 21px;
+      &Name {
+
+      }
+      a {
+        text-decoration:none;
+        color: #54687A;
+        display: block;
+        padding: 7.5px 0 7.5px 44px;
+      }
+    }
+    &Sub {
+      font-size: 15px;
+      .c-mainNavArea__navItemTitle {
+        a {
+          display: block;
+          padding: 0 0 0 44px;
+          &:after {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+    }
   }
 }
+
+
