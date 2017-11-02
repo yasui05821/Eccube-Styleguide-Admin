@@ -36,7 +36,7 @@ block secondaryContents
             +e.toggle
                 i.fa.fa-angle-up
         +e.contents
-            form
+            form.c-search
                 input.c-searchForm(type='text' placeholder='カテゴリ検索')
                 button.c-searchBtn
                     i.fa.fa-search
@@ -61,6 +61,28 @@ block secondaryContents
                             input(type='checkbox')
                             label.c-categoryLayer2 └ カテゴリA-b
                 a.c-categoryBtn(href='#') カテゴリの追加・編集
+    +b.c-block
+        +e.heading
+            +e.titles タグ
+                +e.toolTip
+                    i.fa.fa-question-circle
+            +e.toggle
+                i.fa.fa-angle-up
+        +e.contents
+            .c-tag
+                .c-tag_black オススメ
+                .c-tag_blue 限定品
+                .c-tag_black 新入荷
+                .c-tag_blue 値下げしました
+                .c-tag_black オススメ
+                .c-tag_blue 限定品
+                .c-tag_black 新入荷
+                .c-tag_black 値下げしました
+                .c-tag_black 送料無料
+            a.c-subAction(href='#')
+                i.fa.fa-plus-square-o
+                span.c-subAction_text すべてのタグを表示
+            a.c-tagBtn(href='#') タグの追加・編集
 
 block conversionArea
     +b.c-conversionArea

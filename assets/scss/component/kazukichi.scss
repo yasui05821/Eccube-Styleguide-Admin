@@ -37,8 +37,57 @@
     border-radius: 4px;
     border: 1px solid #696969;
     padding: 10px;
+    font-weight: bold;
     color: #696969;
     text-decoration: none;
     text-align: center;
   }
+}
+
+.c-tag {
+  margin-bottom: 10px;
+  &_black {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #333;
+  }
+  &_blue {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #527dbf;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: #527dbf;
+  }
+}
+
+.c-subAction {
+  display: block;
+  margin-bottom: 15px;
+  color: #333;
+  &_text {
+    margin-left: 5px;
+    font-weight: bold;
+  }
+}
+
+.c-tagBtn {
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #696969;
+  padding: 10px;
+  font-weight: bold;
+  color: #696969;
+  text-decoration: none;
+  text-align: center;
+}
+
+// secondaryContentsが隠れてしまうため、一時的に高さを変えています.
+.c-container {
+  height: 1000px;
 }
