@@ -27,30 +27,43 @@ block primaryContents
                         input(type="text")
 
 block secondaryContents
-    .c-block
-        .c-block__heading
-            .c-block__titles
-                h2.c-block__title 基本設定
-                .c-block__toolTip
+    +b.c-block
+        +e.heading
+            +e.titles
+                +e.H2.title カテゴリ
+                +e.toolTip
                     i.fa.fa-question-circle
-            .c-block__toggle
+            +e.toggle
                 i.fa.fa-angle-up
-        .c-block__contents
+        +e.contents
             form
-                .c-form
-                    .c-form__label
-                        label
-                            span.c-form__labelTitle 商品ID
-                            .c-form__labelToolTip
-                                i.fa.fa-question-circle
-                            .c-form__labelRequired 必須
-                    .c-form__input
-                        input(type="text")
+                input.c-searchForm(type='text' placeholder='カテゴリ検索')
+                button.c-searchBtn
+                    i.fa.fa-search
+                .c-category
+                    ul
+                        li
+                            input(type='checkbox')
+                            label.c-categoryLayer1 カテゴリA
+                        li
+                            input(type='checkbox')
+                            label.c-categoryLayer2 ├ カテゴリA-a
+                        li
+                            input(type='checkbox')
+                            label.c-categoryLayer2 ├ カテゴリA-b
+                        li
+                            input(type='checkbox')
+                            label.c-categoryLayer2 └ カテゴリA-c
+                        li
+                            input(type='checkbox')
+                            label.c-categoryLayer3 └ カテゴリA-c-2
+                        li
+                            input(type='checkbox')
+                            label.c-categoryLayer2 └ カテゴリA-b
+                a.c-categoryBtn(href='#') カテゴリの追加・編集
 
 block conversionArea
     +b.c-conversionArea
         +e.container
             span 公開
             span 更新
-
-

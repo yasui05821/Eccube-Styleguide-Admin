@@ -1,0 +1,115 @@
+@import "../library/_variable";
+@import "../mixin/_media";
+
+/*
+ボタン
+
+コンテンツエリアに配置されます。あるひとつのテーマをもった表示単位であり、
+原則としてタイトルをもちます。ブロック内部にコンテンツやフォームを、テーマにそってまとめます。
+
+Markup:
+.c-button
+
+Styleguide 9.0
+*/
+
+.c-button {}
+
+/*
+ボタンサイズ
+
+コンテンツエリアに配置されます。あるひとつのテーマをもった表示単位であり、
+原則としてタイトルをもちます。ブロック内部にコンテンツやフォームを、テーマにそってまとめます。
+
+Markup:
+.c-button
+  button.c-button_small.c-button_conversion ラベル
+  button.c-button_regular.c-button_conversion コンバージョン
+  button.c-button_large.c-button_conversion コンバージョン
+  button.c-icon_size.c-icon_color
+    i(aria-hidden='true').fa.fa-bars
+
+Styleguide 9.0.1
+*/
+
+.c-button {
+  &_small {
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  &_regular {
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 100px;
+  }
+  &_large {
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    min-width: 130px;
+  }
+  .c-icon_size {
+    width: 41px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+}
+
+/*
+カラー
+
+コンテンツエリアに配置されます。あるひとつのテーマをもった表示単位であり、
+原則としてタイトルをもちます。ブロック内部にコンテンツやフォームを、テーマにそってまとめます。
+
+Markup:
+.c-button
+  button.c-button_conversion.c-button_regular ラベル
+  button.c-button_sub.c-button_regular サブ
+  button.c-button_normal.c-button_regular ノーマル
+  button.c-button_delete.c-button_regular デリート
+  button.c-icon_color.c-icon_size
+    i(aria-hidden='true').fa.fa-bars
+
+Styleguide 9.0.2
+*/
+
+.c-button {
+  &_conversion {
+    background-color: $lochmara;
+    color: $white;
+    border: 0;
+  }
+  &_sub {
+    background-color: $iron;
+    color: $mineShaft;
+    border: 0;
+    &:hover {
+      background-color: $seaShell;
+      color: $boulder;
+    }
+  }
+  &_normal {
+    background-color: $white;
+    color: $boulder;
+    border: 1px solid $boulder;
+    &:hover {
+      background-color: $seaShell;
+    }
+  }
+  &_delete {
+    background-color: $brickRedLight;
+    color: $white;
+    border: 0;
+  }
+  .c-icon_color {
+    background-color: $white;
+    color: $blueBayoux;
+    border: 0;
+    &:hover {
+      background-color: $wildSand;
+      color: $gothic;
+    }
+  }
+}
