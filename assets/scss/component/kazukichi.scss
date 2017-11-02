@@ -138,3 +138,66 @@
 .c-container {
   height: 1000px;
 }
+
+/* 会員マスター */
+.c-users {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px 0;
+}
+
+.c-usersTable {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  &_row {
+    border-bottom: 1px solid #ccc;
+  }
+  &_row:first-child {
+    border-bottom: 2px solid #ccc;
+  }
+  &_head {
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  &_data {
+    padding: 10px 20px;
+    color: #404040;
+  }
+  &_name > a {
+    color: #527dbf;
+  }
+  &_icon {
+    position: absolute;
+    right: 5px;
+    & > a {
+      font-size: 18px;
+      color: #586878;
+    }
+  }
+}
+
+.c-paginate {
+  text-align: center;
+  &_list {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #595959;
+    background-color: #fff;
+    font-size: 20px;
+    color: #595959;
+    text-align: center;
+    line-height: 37px;
+  }
+  &_list:not(last-child) {
+    margin-right: 10px;
+  }
+}
+
+.is-active {
+  background-color: #595959;
+  color: #fff;
+}
