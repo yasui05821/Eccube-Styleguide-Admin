@@ -1,5 +1,51 @@
 @import "../library/_variable";
 
+/* 規格設定 */
+.c-standard {
+  &_title {
+    margin-bottom: 10px;
+  }
+  &_icon {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  &_table {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  &_row {
+    border-bottom: 1px solid #ccc;
+  }
+  &_row:nth-child(odd):not(first-child) {
+    background-color: #f9f9f9;
+  }
+  &_head {
+    border-top: 2px solid #a3a3a3;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    padding-right: 40px;
+    padding-left: 10px;
+  }
+  &_data {
+    padding: 10px 0;
+    padding-left: 10px;
+  }
+}
+
+.c-ctrlBtn {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #696969;
+  padding: 10px;
+  font-weight: bold;
+  color: #696969;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* カテゴリ */
 .c-search {
   &Form {
     width: 240px;
@@ -44,6 +90,7 @@
   }
 }
 
+/* タグ */
 .c-tag {
   margin-bottom: 10px;
   &_black {

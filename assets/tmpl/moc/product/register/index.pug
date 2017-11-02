@@ -25,6 +25,48 @@ block primaryContents
                             .c-form__labelRequired 必須
                     .c-form__input
                         input(type="text")
+    +b.c-block
+        +e.heading
+            +e.titles 規格設定
+                +e.toolTip
+                    i.fa.fa-question-circle
+            +e.toggle
+                i.fa.fa-angle-up
+        +e.contents
+            .c-standard_title この商品の規格
+                i.fa.fa-question-circle.c-standard_icon
+            table.c-standard_table
+                tr.c-standard_row
+                    th.c-standard_head 規格１
+                    th.c-standard_head 規格２
+                    th.c-standard_head 商品コード
+                    th.c-standard_head 在庫数
+                    th.c-standard_head 販売価格（円）
+                tr.c-standard_row
+                    td.c-standard_data プラチナ
+                    td.c-standard_data 100cm
+                    td.c-standard_data aa-001
+                    td.c-standard_data ４
+                    td.c-standard_data 10,000
+                tr.c-standard_row
+                    td.c-standard_data プラチナ
+                    td.c-standard_data 130cm
+                    td.c-standard_data aa-002
+                    td.c-standard_data ８
+                    td.c-standard_data 10,000
+                tr.c-standard_row
+                    td.c-standard_data シルバー
+                    td.c-standard_data 100cm
+                    td.c-standard_data aa-003
+                    td.c-standard_data ４
+                    td.c-standard_data 8,000
+                tr.c-standard_row
+                    td.c-standard_data シルバー
+                    td.c-standard_data 130cm
+                    td.c-standard_data aa-004
+                    td.c-standard_data ６
+                    td.c-standard_data 8,000
+            a.c-ctrlBtn(href='#') この商品の規格管理
 
 block secondaryContents
     +b.c-block
